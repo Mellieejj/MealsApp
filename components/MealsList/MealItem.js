@@ -1,6 +1,6 @@
 import { useNavigation } from '@react-navigation/native';
 import { Image, Platform, Pressable, StyleSheet, Text, View } from 'react-native';
-import MealDetails from './MealDetails';
+import MealDetails from '../MealDetails';
 
 const MealItem = ({ id, title, imageUrl, duration, complexity, affordability }) => {
   const navigation = useNavigation();
@@ -64,5 +64,4 @@ const styles = StyleSheet.create({
     fontSize: 18,
     margin: 8
   }
-
 });
