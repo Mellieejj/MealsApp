@@ -13,6 +13,7 @@ const MealDetailsScreen = ({ route, navigation }) => {
   const headerButtonPressHandler = () => {
     console.log("Pressed header button! ")
   }
+
   useLayoutEffect(() => {
     navigation.setOptions({
       headerRight: () => {
@@ -31,7 +32,7 @@ const MealDetailsScreen = ({ route, navigation }) => {
         duration={selectedMeal.duration} 
         textStyle={styles.detailText}
       />
-      
+
       <View style={styles.listOuterContainer}>
         <View style={styles.listContainer}>
           <SubTitle>Ingredients</SubTitle>
@@ -42,7 +43,7 @@ const MealDetailsScreen = ({ route, navigation }) => {
         </View>
 
       </View>
-      
+
     </ScrollView>
   )
 }
@@ -73,5 +74,4 @@ const styles = StyleSheet.create({
   listOuterContainer: {
     alignItems: 'center'
   }
- 
 });
